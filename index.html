@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="">
+  <!-- Rating state start -->
+  
+  <div class="card u-flex u-flex-column">
+    <div class="ratings-score">
+      <img src="icon-star.svg" alt="Star rating">
+    </div>
+    <h1>How did we do?</h1>
+  
+    <p>Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+  
+    <div class="c-ratings u-flex u-flex-jc-between">
+      <div class="ratings-score js-hook-state">
+        <span tabindex="0">1</span>
+      </div>
+      <div class="ratings-score js-hook-state">
+        <span tabindex="0">2</span>
+      </div>
+      <div class="ratings-score js-hook-state">
+        <span tabindex="0">3</span>
+      </div>
+      <div class="ratings-score js-hook-state">
+        <span tabindex="0">4</span>
+      </div>
+      <div class="ratings-score js-hook-state">
+        <span tabindex="0">5</span>
+      </div>
+    </div>
+  
+  
+    <button class="btn-submit" disabled>SUBMIT</button>
+  </div>
+ 
+  <div class="card u-hidden u-flex u-flex-column u-align-center">
+   
+      <img src="illustration-thank-you.svg" alt="Thank You">
+      <div class="u-flex">  
+        <p class="submitted-rating">You selected out 5 of 5</p>
+      </div>
+    
+      <h1 class="">Thank you!</h1>
+  
+      <p class="u-text-align-center">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+  </div>
+
+   
+
+   
+
+</main>
+
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Jordy</a>.
+  </div>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>

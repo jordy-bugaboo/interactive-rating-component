@@ -1,0 +1,138 @@
+$color-white:  hsl(0, 0%, 100%);
+$color-lightGrey: hsl(217, 12%, 63%);
+$color-mediumGrey: hsl(216, 12%, 54%);
+$color-darkBlue: hsl(213, 19%, 18%);
+$color-veryDarkBlue: hsl(216, 12%, 8%);
+$color-orange: hsl(25, 97%, 53%);
+
+$color-ratingCircles:  hsl(216, 12%, 54%, 0.1);
+
+html {
+    box-sizing: border-box;
+    font-size: 0.9375rem;
+}
+
+body {
+
+    background: $color-veryDarkBlue;
+    color: $color-lightGrey;
+    font-family: "Overpass", sans-serif;
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 414px) {
+    main {
+        display: flex;
+        max-width: 375px;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        background: $color-darkBlue;
+        border-radius: 5%;
+    }
+}
+
+@media screen and (min-width: 415px) {
+    main {
+        max-width: 375px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20vh;
+        background: $color-darkBlue;
+        border-radius: 5%;
+    }
+}
+  
+
+
+.card {
+    padding: 20px;
+}
+
+h1 { 
+    color: $color-white;
+}
+
+.c-ratings {
+    margin-top: 10%;
+}
+
+.ratings-score {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background:$color-ratingCircles;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background:$color-mediumGrey;
+        color: $color-white;
+    }
+}
+
+.active {
+    background-color: orange !important;
+    color: $color-white;
+}
+
+.submitted-rating {
+    background-color: $color-ratingCircles;
+    border: none;
+    color: $color-orange;
+    padding: 7px;
+    text-align: center;
+    // text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.btn-submit {
+    width:100%;
+    border-radius: 20px;
+    border: none;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: $color-orange;
+    color: $color-white;
+    cursor: pointer;
+}
+
+:disabled {
+    background-color: hsl(25, 97%, 53%, 0.1);
+}
+
+/*
+* Utility classes
+*/
+
+.u-flex { 
+    display: flex;
+}
+
+.u-flex-column {
+    flex-direction: column;
+}
+.u-hidden {
+    display: none;
+}
+
+.u-flex-jc-between {
+    justify-content: space-between;
+}
+
+.u-align-center {
+    align-items: center;
+}
+
+.u-text-align-center {
+    text-align: center;
+}
+
+// top right bottom left

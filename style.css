@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+}
+
+body {
+  background: hsl(216deg, 12%, 8%);
+  color: hsl(217deg, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 414px) {
+  main {
+    display: flex;
+    max-width: 375px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: hsl(213deg, 19%, 18%);
+    border-radius: 5%;
+  }
+}
+@media screen and (min-width: 415px) {
+  main {
+    max-width: 375px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+    background: hsl(213deg, 19%, 18%);
+    border-radius: 5%;
+  }
+}
+.card {
+  padding: 20px;
+}
+
+h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.c-ratings {
+  margin-top: 10%;
+}
+
+.ratings-score {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  background: hsla(216deg, 12%, 54%, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+.ratings-score:hover {
+  background: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.active {
+  background-color: orange !important;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.submitted-rating {
+  background-color: hsla(216deg, 12%, 54%, 0.1);
+  border: none;
+  color: hsl(25deg, 97%, 53%);
+  padding: 7px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.btn-submit {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+
+:disabled {
+  background-color: hsla(25deg, 97%, 53%, 0.1);
+}
+
+/*
+* Utility classes
+*/
+.u-flex {
+  display: flex;
+}
+
+.u-flex-column {
+  flex-direction: column;
+}
+
+.u-hidden {
+  display: none;
+}
+
+.u-flex-jc-between {
+  justify-content: space-between;
+}
+
+.u-align-center {
+  align-items: center;
+}
+
+.u-text-align-center {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
